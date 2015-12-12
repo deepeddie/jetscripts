@@ -17,11 +17,14 @@ class OrdersAPI
             $onenodeURLElements = explode("/", $onenodeURL);
             $orderid = $onenodeURLElements[3];
             $orderinfo = $this->GetOrdersNode($authinfo, $orderid);
-            //var_dump($orderid);
-            ///echo "status = " . strtolower($orderinfo->{"status"});
 
-            // not needed - $json_obj = json_encode($orderinfo);
-            $retval[$i] = $orderid;
+            $json_obj = json_encode($orderinfo,JSON_PRETTY_PRINT);
+            //file_put_contents("orderinfo.json", $json_obj);
+            //$strtempl = "{ \"orderid\":%s, \"order_item_id\":%s }";
+            //$ordertuple = sprintf($strtempl, $orderid, $orderinfo->{"order_items"}[0]->{"order_item_id"});
+            
+
+            $retval[$orderid] = $orderinfo;
             $i++;
         }
         return $retval;

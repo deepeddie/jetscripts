@@ -1,0 +1,89 @@
+{
+    "alt_order_id": "",
+    "buyer": {
+        "name": "Shirley f  Everard",
+        "phone_number": "8055359646"
+    },
+    "customer_reference_order_id": "207619350423",
+    "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+    "has_shipments": false,
+    "hash_email": "254395841878@customer.jet.com",
+    "jet_request_directed_cancel": false,
+    "merchant_order_id": "9ca5a44ace2843bba889ffe6ec7eb4a1",
+    "order_detail": {
+        "request_shipping_carrier": null,
+        "request_shipping_method": "DHL Global Mail",
+        "request_service_level": "DHL Global Mail",
+        "request_ship_by": "2015-12-13T06:22:04.4221639Z",
+        "request_delivery_by": "2015-12-19T06:22:04.4221639Z"
+    },
+    "order_items": [
+        {
+            "order_item_id": "fc42a67f672047179b791c2f8d5baaf9",
+            "alt_order_item_id": null,
+            "order_item_acknowledgement_status": null,
+            "merchant_sku": "UNI-35BT-ADA",
+            "request_order_quantity": 1,
+            "request_order_cancel_qty": 0,
+            "adjustment_reason": null,
+            "item_tax_code": null,
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "price_adjustment": null,
+            "item_fees": 0,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "regulatory_fees": null,
+            "tax_info": null,
+            "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+            "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+        }
+    ],
+    "order_placed_date": "2015-12-12T06:22:03.3248752Z",
+    "order_ready_date": "2015-12-12T06:52:04Z",
+    "order_totals": {
+        "item_fees": 0,
+        "regulatory_fees": null,
+        "fee_adjustments": [
+            {
+                "commission_id": "",
+                "adjustment_name": "",
+                "adjustment_type": "base",
+                "value": 1.1152
+            }
+        ],
+        "item_price": {
+            "base_price": 11.99,
+            "item_tax": null,
+            "item_shipping_cost": 1.95,
+            "item_shipping_tax": null
+        },
+        "tax_info": null
+    },
+    "order_transmission_date": "2015-12-12T06:22:04.4221639Z",
+    "reference_order_id": "119913601368",
+    "shipping_to": {
+        "recipient": {
+            "name": "Shirley Everard",
+            "phone_number": "8055359646"
+        },
+        "address": {
+            "address1": "395 n brent st",
+            "address2": null,
+            "city": "Ventura",
+            "state": "CA",
+            "zip_code": "93003"
+        }
+    },
+    "status": "ready"
+}

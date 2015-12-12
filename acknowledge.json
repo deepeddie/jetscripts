@@ -1,0 +1,12 @@
+[{
+  "acknowledgement_status": "accepted",
+  "alt_order_id": "1468f122e0bf4106829094f0a67af842-1",
+  "order_items": [
+    {
+      "order_item_acknowledgement_status": "fulfillable",
+      "order_item_id": "0fbb5cf2e4ca4aca892b991d6c334eac-1",
+      "alt_order_item_id": "null"
+    }
+  ]
+}]
+
