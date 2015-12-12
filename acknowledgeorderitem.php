@@ -8,7 +8,8 @@ require_once 'ProductAPI.php';
 require_once 'OrdersAPI.new.php';
 require_once 'ReturnAPI.php';
 
-$LINE_BREAK = "\r\n";//"<BR>"
+//$LINE_BREAK = "\r\n";
+$LINE_BREAK = "<BR>";
 
 $authobj = new AuthAPI();
 $authinfo = new AuthInfo();
@@ -31,21 +32,20 @@ $prodinventoryfilename = $exportdir . '/jet-prodinventory.json';
 
 echo $LINE_BREAK.$LINE_BREAK;
 
+$oid = $_GET["oid"];
+$oitid = $_GET["oitid"];
 
-
-$filedetails = file_get_contents('acknowledge.json');
+$filedetails = file_get_contents('acknowledge_template.json');
 $allorders = json_decode($filedetails);
-foreach($allorders as $oneorder) {    
-    $id = $oneorder->{'alt_order_id'};
-    unset($oneorder->{'alt_order_id'});
+$allorders[0]->{"order_items"}[0]->{"order_item_id"} = $oitid;
 
-    $result = $orderobj->PutOrderStatus($authinfo, $id, $oneorder);
-    if( strlen($result) > 0) {
-        echo "Put Order Error : ".$id.".  Error is : ".$result . $LINE_BREAK;
-    }
-    else {
-        echo "Put Order Success for sku : ".$id . $LINE_BREAK;
-    }
+$result = $orderobj->AcknowledgeOrder($authinfo, $oid, $allorders[0]);
+if( strlen($result) > 0) {
+    echo "Acknowledge Error for Order : ".$oid.". Order Item : " . $oitid .$LINE_BREAK;
+    echo "Error is : ".$result . $LINE_BREAK;
+}
+else {
+    echo "Acknowledge Order Success " . $LINE_BREAK;
 }
 
 

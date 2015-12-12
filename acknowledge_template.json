@@ -1,0 +1,12 @@
+[{
+  "acknowledgement_status": "accepted",
+  "alt_order_id": "",
+  "order_items": [
+    {
+      "order_item_acknowledgement_status": "fulfillable",
+      "order_item_id": "",
+      "alt_order_item_id": "null"
+    }
+  ]
+}]
+

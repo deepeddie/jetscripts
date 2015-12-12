@@ -1,0 +1,26 @@
+[{
+  "alt_order_id": "",
+  "shipments": [
+    {
+      "alt_shipment_id": " ",
+      "shipment_tracking_number": "",
+      "response_shipment_date": "",
+      "response_shipment_method": "",
+      "expected_delivery_date": "",
+      "ship_from_zip_code": "",
+      "carrier_pick_up_date": "",
+      "carrier": "",
+      "shipment_items": [
+        {
+          "shipment_item_id": "",
+          "alt_shipment_item_id": "",
+          "merchant_sku": "",
+          "response_shipment_sku_quantity": 1,
+          "response_shipment_cancel_qty": 0
+        }
+      ]
+    }
+  ]
+}
+]
+

@@ -1,0 +1,26 @@
+[{
+  "alt_order_id": "64442e096a434bc8b0fc816771824c91",
+  "shipments": [
+    {
+      "alt_shipment_id": " ",
+      "shipment_tracking_number": "9374869903500689221193",
+      "response_shipment_date": "2015-12-08T13:45:30.0000000-07:00",
+      "response_shipment_method": "ups",
+      "expected_delivery_date": "2015-12-14T13:45:30.0000000-07:00",
+      "ship_from_zip_code": "12061",
+      "carrier_pick_up_date": "2015-12-08T13:45:30.0000000-07:00",
+      "carrier": "DHL Global Mail",
+      "shipment_items": [
+        {
+          "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae17",
+          "alt_shipment_item_id": "76-s250117",
+          "merchant_sku": "12864-141",
+          "response_shipment_sku_quantity": 1,
+          "response_shipment_cancel_qty": 0
+        }
+      ]
+    }
+  ]
+}
+]
+

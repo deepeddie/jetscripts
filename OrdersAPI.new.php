@@ -6,10 +6,10 @@ require_once 'HTTP/Request2.php';
 
 class OrdersAPI
 {
-    public function GetAllOrdersNodes(AuthInfo $authinfo)
+    public function GetAllOrdersNodes(AuthInfo $authinfo, $status)
     {
         $retval = array();
-        $allnodes = $this->GetOrdersLinks($authinfo);
+        $allnodes = $this->GetOrdersLinks($authinfo,$status);
         //var_dump($allnodes);
         $allnodeURLs = $allnodes->{'order_urls'};
         $i = 0;
@@ -29,14 +29,14 @@ class OrdersAPI
         }
         return $retval;
     }
-    public function GetOrdersLinks(AuthInfo $authinfo)
+    public function GetOrdersLinks(AuthInfo $authinfo, $status)
     {
         $headers = array(
            'Content-Type' => 'application/json',
             'Authorization' => $authinfo->_token_type . ' ' . $authinfo->_id_token,
         );
 
-        $request = new Http_Request2('https://merchant-api.jet.com/api/orders/ready');
+        $request = new Http_Request2('https://merchant-api.jet.com/api/orders/'.$status);
         $request->setMethod(HTTP_Request2::METHOD_GET);
         $request->setHeader($headers);
 
@@ -127,7 +127,7 @@ class OrdersAPI
            return null;
         }
     }
-    public function PutOrderStatus(AuthInfo $authinfo, $id, $orderdetails)
+    public function AcknowledgeOrder(AuthInfo $authinfo, $id, $orderdetails)
     {
         $headers = array(
            'Content-Type' => 'application/json',
@@ -138,8 +138,8 @@ class OrdersAPI
         $request->setMethod(HTTP_Request2::METHOD_PUT);
         $request->setHeader($headers);
 
-     //   $orderinfo = $this->GetOrdersNode($authinfo, $id);
         $bodycontent = json_encode($orderdetails);
+        
         $request->setBody($bodycontent);
         $request->setConfig(array(
                 'ssl_verify_peer'   => FALSE,
