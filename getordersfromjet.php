@@ -1,10 +1,10 @@
 <html>
  <head>
-  <title>Order list</title>
+  <title>Order Dashboard</title>
  </head>
  <body>
  <?php
-
+ 
 require_once 'HTTP/Request2.php';
 
 require_once 'AuthAPI.php';
@@ -31,8 +31,8 @@ function GetReadyOrders() {
     global $authinfo;
     global $LINE_BREAK;
     
-    $strhtml1 = "";
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = "";
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
 
     $orderobj = new OrdersAPI();
     $allordernodes = $orderobj->GetAllOrdersNodes($authinfo,'ready');
@@ -40,31 +40,31 @@ function GetReadyOrders() {
     //var_dump($json_str);
 
     if(count($allordernodes) > 0) {
-            $strhtml1 = $strhtml1 . "Ready Order IDs : ";
+            $strhtml = $strhtml . "Ready Order IDs : ";
     }
     else {
-            $strhtml1 = $strhtml1 . "No New Ready Orders.";
+            $strhtml = $strhtml . "No New Ready Orders.";
     }
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
     foreach($allordernodes as $orderid => $oneordernode) {
-            $strhtml1 = $strhtml1 . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "<DIV>";
+            $strhtml = $strhtml . $LINE_BREAK;
+            $strhtml = $strhtml . "<DIV>";
             //var_dump($oneordernode);
-            $strhtml1 = $strhtml1 . "OrderId : " . $orderid . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
+            $strhtml = $strhtml . "OrderId : " . $orderid . $LINE_BREAK;
+            $strhtml = $strhtml . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
             foreach($oneordernode->{"order_items"} as $oneorderitemnode) {
-                    $strhtml1 = $strhtml1 . "<DIV>";
-                    $strhtml1 = $strhtml1 . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "<DIV>";
+                    $strhtml = $strhtml . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
 
-                    $strhtml1 = $strhtml1 . "<a href=" . "/acknowledgeorderitem.php?oid=dc-".$orderid."&oitid=dc-".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Acknowledge : </a>";
-                    $strhtml1 = $strhtml1 . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "</DIV>";
+                    $strhtml = $strhtml . "<a href=" . "/acknowledgeorderitem.php?oid=dc-".$orderid."&oitid=dc-".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Acknowledge : </a>";
+                    $strhtml = $strhtml . $LINE_BREAK;
+                    $strhtml = $strhtml . "</DIV>";
             }
-            $strhtml1 = $strhtml1 . "</DIV>";
+            $strhtml = $strhtml . "</DIV>";
     }
-    return $strhtml1;
+    return $strhtml;
 }
 
 function GetAcknowledgedOrders() {
@@ -72,8 +72,8 @@ function GetAcknowledgedOrders() {
     global $authinfo;
     global $LINE_BREAK;
     
-    $strhtml1 = "";
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = "";
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
 
     $orderobj = new OrdersAPI();
     $allordernodes = $orderobj->GetAllOrdersNodes($authinfo,'acknowledged');
@@ -81,31 +81,31 @@ function GetAcknowledgedOrders() {
     //var_dump($json_str);
 
     if(count($allordernodes) > 0) {
-            $strhtml1 = $strhtml1 . "Acknowledged Order IDs : ";
+            $strhtml = $strhtml . "Acknowledged Order IDs : ";
     }
     else {
-            $strhtml1 = $strhtml1 . "No New Acknowledged Orders.";
+            $strhtml = $strhtml . "No New Acknowledged Orders.";
     }
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
     foreach($allordernodes as $orderid => $oneordernode) {
-            $strhtml1 = $strhtml1 . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "<DIV>";
+            $strhtml = $strhtml . $LINE_BREAK;
+            $strhtml = $strhtml . "<DIV>";
             //var_dump($oneordernode);
-            $strhtml1 = $strhtml1 . "OrderId : " . $orderid . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
+            $strhtml = $strhtml . "OrderId : " . $orderid . $LINE_BREAK;
+            $strhtml = $strhtml . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
             foreach($oneordernode->{"order_items"} as $oneorderitemnode) {
-                    $strhtml1 = $strhtml1 . "<DIV>";
-                    $strhtml1 = $strhtml1 . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "<DIV>";
+                    $strhtml = $strhtml . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
 
-                    $strhtml1 = $strhtml1 . "<a href=" . "/shipitem.php?oid=dc-".$orderid."&oitid=dc-".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Acknowledge : </a>";
-                    $strhtml1 = $strhtml1 . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "</DIV>";
+                    $strhtml = $strhtml . "<a href=" . "/shipitem.php?oid=dc-".$orderid."&oitid=dc-".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Ship : </a>";
+                    $strhtml = $strhtml . $LINE_BREAK;
+                    $strhtml = $strhtml . "</DIV>";
             }
-            $strhtml1 = $strhtml1 . "</DIV>";
+            $strhtml = $strhtml . "</DIV>";
     }
-    return $strhtml1;
+    return $strhtml;
 }
 
 function GetCreatedOrders() {
@@ -113,8 +113,8 @@ function GetCreatedOrders() {
     global $authinfo;
     global $LINE_BREAK;
     
-    $strhtml1 = "";
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = "";
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
 
     $orderobj = new OrdersAPI();
     $allordernodes = $orderobj->GetAllOrdersNodes($authinfo,'created');
@@ -122,31 +122,30 @@ function GetCreatedOrders() {
     //var_dump($json_str);
 
     if(count($allordernodes) > 0) {
-            $strhtml1 = $strhtml1 . "Created Order IDs : ";
+            $strhtml = $strhtml . "Created Order IDs : ";
     }
     else {
-            $strhtml1 = $strhtml1 . "No New Created Orders.";
+            $strhtml = $strhtml . "No New Created Orders.";
     }
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
     foreach($allordernodes as $orderid => $oneordernode) {
-            $strhtml1 = $strhtml1 . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "<DIV>";
+            $strhtml = $strhtml . $LINE_BREAK;
+            $strhtml = $strhtml . "<DIV>";
             //var_dump($oneordernode);
-            $strhtml1 = $strhtml1 . "OrderId : " . $orderid . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
+            $strhtml = $strhtml . "OrderId : " . $orderid . $LINE_BREAK;
+            $strhtml = $strhtml . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
             foreach($oneordernode->{"order_items"} as $oneorderitemnode) {
-                    $strhtml1 = $strhtml1 . "<DIV>";
-                    $strhtml1 = $strhtml1 . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "<DIV>";
+                    $strhtml = $strhtml . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
 
-                    $strhtml1 = $strhtml1 . "<a href=" . "/shipitem.php?oid=dc-".$orderid."&oitid=dc-".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Acknowledge : </a>";
-                    $strhtml1 = $strhtml1 . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "</DIV>";
+                    $strhtml = $strhtml . $LINE_BREAK;
+                    $strhtml = $strhtml . "</DIV>";
             }
-            $strhtml1 = $strhtml1 . "</DIV>";
+            $strhtml = $strhtml . "</DIV>";
     }
-    return $strhtml1;
+    return $strhtml;
 }
 
 function GetInProgressOrders() {
@@ -154,8 +153,8 @@ function GetInProgressOrders() {
     global $authinfo;
     global $LINE_BREAK;
     
-    $strhtml1 = "";
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = "";
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
 
     $orderobj = new OrdersAPI();
     $allordernodes = $orderobj->GetAllOrdersNodes($authinfo,'inprogress');
@@ -163,30 +162,30 @@ function GetInProgressOrders() {
     //var_dump($json_str);
 
     if(count($allordernodes) > 0) {
-            $strhtml1 = $strhtml1 . "InProgress Order IDs : ";
+            $strhtml = $strhtml . "InProgress Order IDs : ";
     }
     else {
-            $strhtml1 = $strhtml1 . "No New InProgress Orders.";
+            $strhtml = $strhtml . "No New InProgress Orders.";
     }
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
     foreach($allordernodes as $orderid => $oneordernode) {
-            $strhtml1 = $strhtml1 . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "<DIV>";
+            $strhtml = $strhtml . $LINE_BREAK;
+            $strhtml = $strhtml . "<DIV>";
             //var_dump($oneordernode);
-            $strhtml1 = $strhtml1 . "OrderId : " . $orderid . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
+            $strhtml = $strhtml . "OrderId : " . $orderid . $LINE_BREAK;
+            $strhtml = $strhtml . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
             foreach($oneordernode->{"order_items"} as $oneorderitemnode) {
-                    $strhtml1 = $strhtml1 . "<DIV>";
-                    $strhtml1 = $strhtml1 . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "<DIV>";
+                    $strhtml = $strhtml . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
 
-                    $strhtml1 = $strhtml1 . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "</DIV>";
+                    $strhtml = $strhtml . $LINE_BREAK;
+                    $strhtml = $strhtml . "</DIV>";
             }
-            $strhtml1 = $strhtml1 . "</DIV>";
+            $strhtml = $strhtml . "</DIV>";
     }
-    return $strhtml1;
+    return $strhtml;
 }
 
 function GetCompleteOrders() {
@@ -194,8 +193,8 @@ function GetCompleteOrders() {
     global $authinfo;
     global $LINE_BREAK;
     
-    $strhtml1 = "";
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = "";
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
 
     $orderobj = new OrdersAPI();
     $allordernodes = $orderobj->GetAllOrdersNodes($authinfo,'complete');
@@ -203,30 +202,30 @@ function GetCompleteOrders() {
     //var_dump($json_str);
 
     if(count($allordernodes) > 0) {
-            $strhtml1 = $strhtml1 . "Complete Order IDs : ";
+            $strhtml = $strhtml . "Complete Order IDs : ";
     }
     else {
-            $strhtml1 = $strhtml1 . "No New Complete Orders.";
+            $strhtml = $strhtml . "No New Complete Orders.";
     }
-    $strhtml1 = $strhtml1 . $LINE_BREAK.$LINE_BREAK;
+    $strhtml = $strhtml . $LINE_BREAK.$LINE_BREAK;
     foreach($allordernodes as $orderid => $oneordernode) {
-            $strhtml1 = $strhtml1 . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "<DIV>";
+            $strhtml = $strhtml . $LINE_BREAK;
+            $strhtml = $strhtml . "<DIV>";
             //var_dump($oneordernode);
-            $strhtml1 = $strhtml1 . "OrderId : " . $orderid . $LINE_BREAK;
-            $strhtml1 = $strhtml1 . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
+            $strhtml = $strhtml . "OrderId : " . $orderid . $LINE_BREAK;
+            $strhtml = $strhtml . "Order place date : " . $oneordernode->{"order_placed_date"} . $LINE_BREAK;
             foreach($oneordernode->{"order_items"} as $oneorderitemnode) {
-                    $strhtml1 = $strhtml1 . "<DIV>";
-                    $strhtml1 = $strhtml1 . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "<DIV>";
+                    $strhtml = $strhtml . "order_item_id : " . $oneorderitemnode->{"order_item_id"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
+                    $strhtml = $strhtml . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
 
-                    $strhtml1 = $strhtml1 . $LINE_BREAK;
-                    $strhtml1 = $strhtml1 . "</DIV>";
+                    $strhtml = $strhtml . $LINE_BREAK;
+                    $strhtml = $strhtml . "</DIV>";
             }
-            $strhtml1 = $strhtml1 . "</DIV>";
+            $strhtml = $strhtml . "</DIV>";
     }
-    return $strhtml1;
+    return $strhtml;
 }
 
 $str = GetReadyOrders();

@@ -29,6 +29,7 @@ class OrdersAPI
         }
         return $retval;
     }
+    
     public function GetOrdersLinks(AuthInfo $authinfo, $status)
     {
         $headers = array(
@@ -61,6 +62,7 @@ class OrdersAPI
            return '{}';
         }
     }
+    
     public function GetOrdersNode(AuthInfo $authinfo , $id)
     {
         $headers = array(
@@ -93,40 +95,7 @@ class OrdersAPI
            return null;
         }
     }
-    
-    
-    public function GetOrder(AuthInfo $authinfo , $id)
-    {
-        $headers = array(
-           'Content-Type' => 'application/json',
-            'Authorization' => $authinfo->_token_type . ' ' . $authinfo->_id_token,
-        );
-                        ///orders/withoutShipmentDetail/{id}
-        $request = new Http_Request2('https://merchant-api.jet.com/api/orders/withoutShipmentDetail/'.$id);
-        $request->setMethod(HTTP_Request2::METHOD_GET);
-        $request->setHeader($headers);
 
-        $request->setBody("");
-        $request->setConfig(array(
-                'ssl_verify_peer'   => FALSE,
-                'ssl_verify_host'   => FALSE
-                ));
-        try
-        {
-           $response = $request->send();
-
-           //echo $response->getBody();
-           $bodyresponse = $response->getBody();
-           $jsonresp = json_decode($bodyresponse);
-           
-           return $jsonresp;
-        }
-        catch (HttpException $ex)
-        {
-           echo $ex;
-           return null;
-        }
-    }
     public function AcknowledgeOrder(AuthInfo $authinfo, $id, $orderdetails)
     {
         $headers = array(
@@ -161,8 +130,7 @@ class OrdersAPI
            return null;
         }
     }
-    
-     
+
     public function PutOrderShipment(AuthInfo $authinfo, $id, $orderdetails)
     {
         $headers = array(
