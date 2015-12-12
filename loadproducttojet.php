@@ -51,7 +51,7 @@ $orderobj = new OrdersAPI();
 $returnobj = new ReturnAPI();
 
 $currdir = getcwd();
-$exportdir = $currdir.'/../var/export1';
+$exportdir = $currdir.'/../var/export';
 $prodinfofilename = $exportdir . '/jet-prodinfo.json';
 $prodconfigurablefilename = $exportdir . '/jet-prodconfigurable.json';
 $prodpricefilename = $exportdir . '/jet-prodprice.json';

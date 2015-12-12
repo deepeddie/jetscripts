@@ -5,7 +5,7 @@ require_once 'HTTP/Request2.php';
 require_once 'AuthAPI.php';
 require_once 'TaxonomyAPI.php';
 require_once 'ProductAPI.php';
-require_once 'OrdersAPI.new.php';
+require_once 'OrdersAPI.php';
 require_once 'ReturnAPI.php';
 
 $LINE_BREAK = "\r\n";//"<BR>"

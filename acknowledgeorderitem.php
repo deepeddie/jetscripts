@@ -5,7 +5,7 @@ require_once 'HTTP/Request2.php';
 require_once 'AuthAPI.php';
 require_once 'TaxonomyAPI.php';
 require_once 'ProductAPI.php';
-require_once 'OrdersAPI.new.php';
+require_once 'OrdersAPI.php';
 require_once 'ReturnAPI.php';
 
 //$LINE_BREAK = "\r\n";
@@ -47,25 +47,5 @@ if( strlen($result) > 0) {
 else {
     echo "Acknowledge Order Success " . $LINE_BREAK;
 }
-
-
-
-// $result = '';
-
-// $allorderids = $orderobj->PutOrderStatus($authinfo);
-
-// echo $LINE_BREAK.$LINE_BREAK;
-// if(count($allorderids) > 0) {
-// 	echo "Ready Order IDs : ";
-// }
-// else {
-// 	echo "No New Ready Orders.";
-// }
-// foreach($allorderids as $oneorderid) {
-// 	echo $LINE_BREAK;
-// 	echo "OrderId : " . $oneorderid . $LINE_BREAK;
-// }
-
-
 
 ?>

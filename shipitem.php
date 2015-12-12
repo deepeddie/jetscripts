@@ -28,7 +28,7 @@
         require_once 'HTTP/Request2.php';
 
         require_once 'AuthAPI.php';
-        require_once 'OrdersAPI.new.php';
+        require_once 'OrdersAPI.php';
 
         //$LINE_BREAK = "\r\n";
         $LINE_BREAK = "<BR>";

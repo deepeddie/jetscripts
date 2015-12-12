@@ -10,7 +10,7 @@ require_once 'HTTP/Request2.php';
 require_once 'AuthAPI.php';
 require_once 'TaxonomyAPI.php';
 require_once 'ProductAPI.php';
-require_once 'OrdersAPI.new.php';
+require_once 'OrdersAPI.php';
 require_once 'ReturnAPI.php';
 
 //$LINE_BREAK = "\r\n";
@@ -58,7 +58,7 @@ function GetReadyOrders() {
                     $strhtml = $strhtml . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
                     $strhtml = $strhtml . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
 
-                    $strhtml = $strhtml . "<a href=" . "/acknowledgeorderitem.php?oid=dc-".$orderid."&oitid=dc-".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Acknowledge : </a>";
+                    $strhtml = $strhtml . "<a href=" . "/acknowledgeorderitem.php?oid=".$orderid."&oitid=".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Acknowledge : </a>";
                     $strhtml = $strhtml . $LINE_BREAK;
                     $strhtml = $strhtml . "</DIV>";
             }
@@ -99,7 +99,7 @@ function GetAcknowledgedOrders() {
                     $strhtml = $strhtml . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
                     $strhtml = $strhtml . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
 
-                    $strhtml = $strhtml . "<a href=" . "/shipitem.php?oid=dc-".$orderid."&oitid=dc-".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Ship : </a>";
+                    $strhtml = $strhtml . "<a href=" . "/shipitem.php?oid=".$orderid."&oitid=".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Ship : </a>";
                     $strhtml = $strhtml . $LINE_BREAK;
                     $strhtml = $strhtml . "</DIV>";
             }
