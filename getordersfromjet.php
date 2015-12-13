@@ -58,7 +58,7 @@ function GetReadyOrders() {
                     $strhtml = $strhtml . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
                     $strhtml = $strhtml . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
 
-                    $strhtml = $strhtml . "<a href=" . "/acknowledgeorderitem.php?oid=".$orderid."&oitid=".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Acknowledge : </a>";
+                    $strhtml = $strhtml . "<a href=" . "/jetscripts/acknowledgeorderitem.php?oid=".$orderid."&oitid=".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Acknowledge : </a>";
                     $strhtml = $strhtml . $LINE_BREAK;
                     $strhtml = $strhtml . "</DIV>";
             }
@@ -99,7 +99,7 @@ function GetAcknowledgedOrders() {
                     $strhtml = $strhtml . "merchant_sku : " . $oneorderitemnode->{"merchant_sku"} . $LINE_BREAK;
                     $strhtml = $strhtml . "quanitity : " . $oneorderitemnode->{"request_order_quantity"} . $LINE_BREAK;
 
-                    $strhtml = $strhtml . "<a href=" . "/shipitem.php?oid=".$orderid."&oitid=".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Ship : </a>";
+                    $strhtml = $strhtml . "<a href=" . "/jetscripts/shipitem.php?oid=".$orderid."&oitid=".$oneorderitemnode->{"order_item_id"} . " target=\"_blank\">Ship : </a>";
                     $strhtml = $strhtml . $LINE_BREAK;
                     $strhtml = $strhtml . "</DIV>";
             }

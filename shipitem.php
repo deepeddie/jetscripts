@@ -65,36 +65,41 @@
         $shipdate_2 = test_input($_POST["element_3_2"]);//DD
         $shipdate_3 = test_input($_POST["element_3_3"]);//YYYY
         $shipdate = new DateTime($shipdate_3.'-'.$shipdate_1.'-'.$shipdate_2);
-        $shipdate = $shipdate->format(DateTime::ISO8601);
+        //$shipdate = $shipdate->format(DateTime::ISO8601);
+        $shipdate = $shipdate->format("Y-m-d")."T00:00:00.0000000-05:00";
 
         $deliverydate_1 = test_input($_POST["element_4_1"]);//MM
         $deliverydate_2 = test_input($_POST["element_4_2"]);//DD
         $deliverydate_3 = test_input($_POST["element_4_3"]);//YYYY
         $deliverydate = new DateTime($deliverydate_3.'-'.$deliverydate_1.'-'.$deliverydate_2);
-        $deliverydate = $deliverydate->format(DateTime::ISO8601);
+        //$deliverydate = $deliverydate->format(DateTime::ISO8601);
+        $deliverydate = $deliverydate->format("Y-m-d")."T00:00:00.0000000-05:00";
+
 
         $pickupdate_1 = test_input($_POST["element_6_1"]);//MM
         $pickupdate_2 = test_input($_POST["element_6_2"]);//DD
         $pickupdate_3 = test_input($_POST["element_6_3"]);//YYYY
         $pickupdate = new DateTime($pickupdate_3.'-'.$pickupdate_1.'-'.$pickupdate_2);
-        $pickupdate = $pickupdate->format(DateTime::ISO8601);
+        //$pickupdate = $pickupdate->format(DateTime::ISO8601);
+        $pickupdate = $pickupdate->format("Y-m-d")."T00:00:00.0000000-05:00";
+
         
         $filedetails = file_get_contents('shipment_template.json');
         $allshipments = json_decode($filedetails);
         
-        $allshipments[0]->{"alt_order_id"} =                                $oid;
+        $allshipments->{"alt_order_id"} =                                $oid;
         
-        $allshipments[0]->{"shipments"}[0]->{"shipment_tracking_number"} =  $trackingnumber;
-        $allshipments[0]->{"shipments"}[0]->{"response_shipment_method"} =  $shipmethod;
-        $allshipments[0]->{"shipments"}[0]->{"carrier"} =                   $carrier;
-        $allshipments[0]->{"shipments"}[0]->{"response_shipment_date"} =    $shipdate;
-        $allshipments[0]->{"shipments"}[0]->{"expected_delivery_date"} =    $deliverydate;
-        $allshipments[0]->{"shipments"}[0]->{"carrier_pick_up_date"} =      $pickupdate;
+        $allshipments->{"shipments"}[0]->{"shipment_tracking_number"} =  $trackingnumber;
+        $allshipments->{"shipments"}[0]->{"response_shipment_method"} =  $shipmethod;
+        $allshipments->{"shipments"}[0]->{"carrier"} =                   $carrier;
+        $allshipments->{"shipments"}[0]->{"response_shipment_date"} =    $shipdate;
+        $allshipments->{"shipments"}[0]->{"expected_delivery_date"} =    $deliverydate;
+        $allshipments->{"shipments"}[0]->{"carrier_pick_up_date"} =      $pickupdate;
 
-        $allshipments[0]->{"shipments"}[0]->{"shipment_items"}[0]->{"shipment_item_id"} =       $trackingnumber;
-        $allshipments[0]->{"shipments"}[0]->{"shipment_items"}[0]->{"alt_shipment_item_id"} =   $trackingnumber;
-        $allshipments[0]->{"shipments"}[0]->{"shipment_items"}[0]->{"merchant_sku"} =           $sku;
-        $allshipments[0]->{"shipments"}[0]->{"shipment_items"}[0]->{"response_shipment_sku_quantity"} = intval($qty);
+        $allshipments->{"shipments"}[0]->{"shipment_items"}[0]->{"shipment_item_id"} =       $trackingnumber;
+        $allshipments->{"shipments"}[0]->{"shipment_items"}[0]->{"alt_shipment_item_id"} =   $trackingnumber;
+        $allshipments->{"shipments"}[0]->{"shipment_items"}[0]->{"merchant_sku"} =           $sku;
+        $allshipments->{"shipments"}[0]->{"shipment_items"}[0]->{"response_shipment_sku_quantity"} = intval($qty);
 
         $str = json_encode($allshipments, JSON_PRETTY_PRINT);
         
