@@ -1,5 +1,5 @@
  
-string(93674) "{
+{
     "877f98febc9d4b38ad9e71553eab3af7": {
         "acknowledgement_status": "accepted",
         "alt_order_id": "877f98febc9d4b38ad9e",
@@ -2288,4 +2288,4 @@ string(93674) "{
         },
         "status": "complete"
     }
-}"
+}
