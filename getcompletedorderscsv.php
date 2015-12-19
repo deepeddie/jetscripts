@@ -52,7 +52,7 @@ function GetAllOrders($status) {
     //var_dump($json_str);
 }
 
-function GetCompleteOrdersCSV($allcompletedorders) {
+function GetCompletedOrdersCSV($allcompletedorders) {
 
     global $authinfo;
     global $DELIM;
@@ -135,7 +135,7 @@ function GetCompleteOrdersCSV($allcompletedorders) {
 }
 
 $allcompletedorders = GetAllOrders('complete');
-$retstr = GetCompleteOrdersCSV($allcompletedorders);
+$retstr = GetCompletedOrdersCSV($allcompletedorders);
 
 header('Content-Type: application/csv');
 header('Content-Disposition: attachment; filename="'.'allorders.csv'.'";');

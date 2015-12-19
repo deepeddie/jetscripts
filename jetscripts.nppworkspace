@@ -1,0 +1,45 @@
+<NotepadPlus>
+    <Project name="jetscripts">
+        <Folder name="nbproject">
+            <File name="nbproject\project.properties" />
+            <File name="nbproject\project.xml" />
+        </Folder>
+        <Folder name="shipform">
+            <File name="shipform\blank.gif" />
+            <File name="shipform\bottom.png" />
+            <File name="shipform\calendar.gif" />
+            <File name="shipform\calendar.js" />
+            <File name="shipform\iepngfix.htc" />
+            <File name="shipform\shadow.gif" />
+            <File name="shipform\top.png" />
+            <File name="shipform\view.css" />
+            <File name="shipform\view.js" />
+        </Folder>
+        <File name=".gitattributes" />
+        <File name=".gitignore" />
+        <File name="acknowledge.json" />
+        <File name="acknowledgeorderitem.php" />
+        <File name="acknowledge_template.json" />
+        <File name="allorders.json" />
+        <File name="AuthAPI.php" />
+        <File name="AuthInfo.php" />
+        <File name="file.csv" />
+        <File name="getcompletedorderscsv.php" />
+        <File name="getordersfromjet.php" />
+        <File name="jet-proj.sublime-project" />
+        <File name="jet-proj.sublime-workspace" />
+        <File name="loadproducttojet.php" />
+        <File name="orderinfo.json" />
+        <File name="OrdersAPI.old.php" />
+        <File name="OrdersAPI.php" />
+        <File name="prod.json" />
+        <File name="ProductAPI.php" />
+        <File name="ReturnAPI.php" />
+        <File name="shipitem.php" />
+        <File name="shipment_template.json" />
+        <File name="shiporder.php" />
+        <File name="shipped.json" />
+        <File name="TaxonomyAPI.php" />
+        <File name="testconnection.php" />
+    </Project>
+</NotepadPlus>
