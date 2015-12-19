@@ -61,7 +61,7 @@ function GetCompletedOrdersCSV($allcompletedorders) {
     
 
     $orderobj = new OrdersAPI();
-    $allcompletedorders = $orderobj->GetAllOrdersNodes($authinfo,'complete');
+    $allcompletedorders = $orderobj->GetAllOrdersNodes($authinfo,'acknowledged');
     $json_str = json_encode($allcompletedorders,JSON_PRETTY_PRINT);
     //var_dump($json_str);
 
