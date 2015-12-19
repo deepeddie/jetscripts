@@ -128,7 +128,7 @@ function GetCompleteOrdersCSV() {
 $retstr = GetCompleteOrdersCSV();
 
 header('Content-Type: application/csv');
-header('Content-Disposition: attachment; filename="'.$filename.'";');
+header('Content-Disposition: attachment; filename="'.'allorders.csv'.'";');
 
 // open the "output" stream
 // see http://www.php.net/manual/en/wrappers.php.php#refsect2-wrappers.php-unknown-unknown-unknown-descriptioq
