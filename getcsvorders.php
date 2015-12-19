@@ -42,7 +42,17 @@ function SafeGetValue($val){
     return "";
 }
 
-function GetCompleteOrdersCSV() {
+function GetAllOrders($status) {
+
+    global $authinfo;
+
+    $orderobj = new OrdersAPI();
+    $allordernodes = $orderobj->GetAllOrdersNodes($authinfo,$status);
+    $json_str = json_encode($allordernodes,JSON_PRETTY_PRINT);
+    //var_dump($json_str);
+}
+
+function GetCompleteOrdersCSV($allcompletedorders) {
 
     global $authinfo;
     global $DELIM;
@@ -51,8 +61,8 @@ function GetCompleteOrdersCSV() {
     
 
     $orderobj = new OrdersAPI();
-    $allordernodes = $orderobj->GetAllOrdersNodes($authinfo,'complete');
-    $json_str = json_encode($allordernodes,JSON_PRETTY_PRINT);
+    $allcompletedorders = $orderobj->GetAllOrdersNodes($authinfo,'complete');
+    $json_str = json_encode($allcompletedorders,JSON_PRETTY_PRINT);
     //var_dump($json_str);
 
     $csvline = "";
@@ -86,7 +96,7 @@ function GetCompleteOrdersCSV() {
             $csvline = $csvline . $NEW_LINE;
 
     }
-    foreach($allordernodes as $orderid => $oneordernode) {
+    foreach($allcompletedorders as $orderid => $oneordernode) {
             $csvline = $csvline .  $orderid . $DELIM;
             $csvline = $csvline .  "\"" .$oneordernode->{"status"} . "\"" . $DELIM;
             $csvline = $csvline .  "\"" .Convert2Date($oneordernode->{"order_placed_date"}) . "\"" .$DELIM;
@@ -124,8 +134,8 @@ function GetCompleteOrdersCSV() {
 
 }
 
-
-$retstr = GetCompleteOrdersCSV();
+$allcompletedorders = GetAllOrders('complete');
+$retstr = GetCompleteOrdersCSV($allcompletedorders);
 
 header('Content-Type: application/csv');
 header('Content-Disposition: attachment; filename="'.'allorders.csv'.'";');
