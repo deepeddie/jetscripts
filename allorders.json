@@ -1,0 +1,2291 @@
+ 
+string(93674) "{
+    "877f98febc9d4b38ad9e71553eab3af7": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "877f98febc9d4b38ad9e",
+        "buyer": {
+            "name": "GARY OLSEN",
+            "phone_number": "7322325377"
+        },
+        "customer_reference_order_id": "393626677692",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "341787184618@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "877f98febc9d4b38ad9e71553eab3af7",
+        "order_acknowledge_date": "2015-12-08T01:55:57Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-08T01:27:41.5137147Z",
+            "request_delivery_by": "2015-12-14T01:27:41.5137147Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "839201d6f9aa4782a196ddeffba8f739",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-07T01:27:39.9310886Z",
+        "order_ready_date": "2015-12-07T01:57:41Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-07T01:27:41.5137147Z",
+        "reference_order_id": "324298844028",
+        "shipments": [
+            {
+                "shipment_id": "fd9b8f4f9c4a41da886eccd67e8cae16",
+                "alt_shipment_id": "76-s25016",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": ""
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-07T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-13T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-07T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "2a5e202449394f3f90ec238a069e2d66",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae16",
+                        "alt_shipment_item_id": "76-s250116",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-08T02:05:21Z",
+                "shipment_tracking_number": "9374869903500686004294"
+            },
+            {
+                "alt_shipment_id": "877f98febc9d4b38ad9e",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:31:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:31:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:31:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "d92c4d4b3f2c42069ff7f205b3353aef",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "839201d6f9aa478-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:31:14Z",
+                "shipment_tracking_number": "use9374869903500686004294"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Gary Olsen",
+                "phone_number": "7322325377"
+            },
+            "address": {
+                "address1": "1229 Neptune Ave",
+                "address2": null,
+                "city": "Beachwood",
+                "state": "NJ",
+                "zip_code": "08722"
+            }
+        },
+        "status": "complete"
+    },
+    "cd7f81db70bb4c68af495c98f332c567": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "cd7f81db70bb4c68af49",
+        "buyer": {
+            "name": "Terry L Goff",
+            "phone_number": "4176312112"
+        },
+        "customer_reference_order_id": "314571794932",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "117962500919@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "cd7f81db70bb4c68af495c98f332c567",
+        "order_acknowledge_date": "2015-12-04T17:41:45Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-05T14:30:15.6724119Z",
+            "request_delivery_by": "2015-12-11T14:30:15.6724119Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "0e8a019d4dc54a87a2f4d57a49fad8d9",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-04T14:30:14.7351937Z",
+        "order_ready_date": "2015-12-04T15:00:15Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-04T14:30:15.6724119Z",
+        "reference_order_id": "217014128760",
+        "shipments": [
+            {
+                "shipment_id": "fd9b8f4f9c4a41da886eccd67e8cae78",
+                "alt_shipment_id": "76-s2507",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": " "
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-04T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-11T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-04T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "22159611921a4a859bfcdcc694ef531c",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae78",
+                        "alt_shipment_item_id": "76-s2507",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-04T19:43:18Z",
+                "shipment_tracking_number": "9374869903500679896097"
+            },
+            {
+                "alt_shipment_id": "cd7f81db70bb4c68af49",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:27:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:27:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:27:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "b8abbdc54efc44b1b9d877b4867788b9",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "0e8a019d4dc54a8-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:28:06Z",
+                "shipment_tracking_number": "use9374869903500679896097"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Terry Goff",
+                "phone_number": "4176312112"
+            },
+            "address": {
+                "address1": "321 Pension Ave.",
+                "address2": null,
+                "city": "Bradenton",
+                "state": "FL",
+                "zip_code": "34208"
+            }
+        },
+        "status": "complete"
+    },
+    "64442e096a434bc8b0fc816771824c91": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "64442e096a434bc8b0fc",
+        "buyer": {
+            "name": "cameron t sullivan",
+            "phone_number": "9102288361"
+        },
+        "customer_reference_order_id": "314014390657",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "143473786525@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "64442e096a434bc8b0fc816771824c91",
+        "order_acknowledge_date": "2015-12-10T12:25:07Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-09T03:01:09.5642648Z",
+            "request_delivery_by": "2015-12-15T03:01:09.5642648Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "d684978d2a684300822f5d1128ccd032",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-08T03:01:08.5590746Z",
+        "order_ready_date": "2015-12-08T03:31:09Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-08T03:01:09.5642648Z",
+        "reference_order_id": "224480650840",
+        "shipments": [
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-08T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-14T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-08T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "98543b43bf344f2883642199c782f18b",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae17",
+                        "alt_shipment_item_id": "76-s250117",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T12:36:03Z",
+                "shipment_tracking_number": "9374869903500689221193"
+            },
+            {
+                "alt_shipment_id": "64442e096a434bc8b0fc",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:28:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:28:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:28:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "bdc6638ae6b844f2bb92aaa3482c0064",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "d684978d2a68430-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:28:42Z",
+                "shipment_tracking_number": "use9374869903500689221193"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Cameron Sullivan",
+                "phone_number": "9102288361"
+            },
+            "address": {
+                "address1": "455 Pennsylvania St.",
+                "address2": "Unit 2",
+                "city": "Denver",
+                "state": "CO",
+                "zip_code": "80203"
+            }
+        },
+        "status": "complete"
+    },
+    "afd0cea616404944adc200109c1fae00": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "afd0cea616404944adc2",
+        "buyer": {
+            "name": "cristino virgen",
+            "phone_number": "8622416744"
+        },
+        "customer_reference_order_id": "406632166034",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "328080456698@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "afd0cea616404944adc200109c1fae00",
+        "order_acknowledge_date": "2015-12-06T23:21:20Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-07T04:40:16.3362849Z",
+            "request_delivery_by": "2015-12-13T04:40:16.3362849Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "f4cc1ede30a546b7839608e52b0690cd",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-06T04:40:15.0784616Z",
+        "order_ready_date": "2015-12-06T05:10:16Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-06T04:40:16.3362849Z",
+        "reference_order_id": "339133554313",
+        "shipments": [
+            {
+                "shipment_id": "fd9b8f4f9c4a41da886eccd67e8cae13",
+                "alt_shipment_id": "76-s25013",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": ""
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-07T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-13T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-07T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "4fa818f2058b487c9cbead987484fcef",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae13",
+                        "alt_shipment_item_id": "76-s25013",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-08T01:47:59Z",
+                "shipment_tracking_number": "9374869903500686005109"
+            },
+            {
+                "alt_shipment_id": "afd0cea616404944adc2",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:31:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:31:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:31:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "36df7e30d9464136b9eef96ed59a620b",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "f4cc1ede30a546b-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:31:39Z",
+                "shipment_tracking_number": "use9374869903500686005109"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "cristino virgen",
+                "phone_number": "8622416744"
+            },
+            "address": {
+                "address1": "122 prospect st",
+                "address2": "apt 1",
+                "city": "Newark",
+                "state": "NJ",
+                "zip_code": "07105"
+            }
+        },
+        "status": "complete"
+    },
+    "3f6079864caf48bf804b5339219dd30b": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "3f6079864caf48bf804b",
+        "buyer": {
+            "name": "Sandeep Arya",
+            "phone_number": "3474190655"
+        },
+        "customer_reference_order_id": "128743711082",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "178258972733@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "3f6079864caf48bf804b5339219dd30b",
+        "order_acknowledge_date": "2015-12-06T23:22:37Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-07T17:05:16.7049904Z",
+            "request_delivery_by": "2015-12-13T17:05:16.7049904Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "72d879fc9d514db9ba5c2509fe78d115",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-06T17:05:15.1727138Z",
+        "order_ready_date": "2015-12-06T17:35:16Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-06T17:05:16.7049904Z",
+        "reference_order_id": "147816554013",
+        "shipments": [
+            {
+                "shipment_id": "fd9b8f4f9c4a41da886eccd67e8cae14",
+                "alt_shipment_id": "76-s25014",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": ""
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-07T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-13T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-07T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "6053e19c786c42608c8054c3f80ec089",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae14",
+                        "alt_shipment_item_id": "76-s25014",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-08T01:45:38Z",
+                "shipment_tracking_number": "9374869903500686004812"
+            },
+            {
+                "alt_shipment_id": "3f6079864caf48bf804b",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:23:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:23:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:23:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "59ecbf6567b24abd9320b147cbceb37d",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "72d879fc9d514db-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:24:20Z",
+                "shipment_tracking_number": "use9374869903500686004812"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Sandeep Arya",
+                "phone_number": "3474190655"
+            },
+            "address": {
+                "address1": "1012 Broadway st",
+                "address2": "602",
+                "city": "Kansas City",
+                "state": "MO",
+                "zip_code": "64105"
+            }
+        },
+        "status": "complete"
+    },
+    "c0e5ecc1829446e392ef55fc14a84852": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "c0e5ecc1829446e392ef",
+        "buyer": {
+            "name": "Jaime Denny",
+            "phone_number": "3865622990"
+        },
+        "customer_reference_order_id": "271512360515",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "270340525432@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "c0e5ecc1829446e392ef55fc14a84852",
+        "order_acknowledge_date": "2015-12-06T23:18:47Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-06T02:09:21.7195431Z",
+            "request_delivery_by": "2015-12-12T02:09:21.7195431Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "e0506c78ccea40faa77876b8d8a38050",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-05T02:09:21.0884989Z",
+        "order_ready_date": "2015-12-05T02:39:21Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-05T02:09:21.7195431Z",
+        "reference_order_id": "306619280285",
+        "shipments": [
+            {
+                "shipment_id": "fd9b8f4f9c4a41da886eccd67e8cae12",
+                "alt_shipment_id": "76-s25012",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": ""
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-07T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-13T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-07T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "6a785d641e6e4feaaaf45632b2ef6016",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae12",
+                        "alt_shipment_item_id": "76-s25012",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-08T01:50:10Z",
+                "shipment_tracking_number": "9374869903500686005390"
+            },
+            {
+                "alt_shipment_id": "c0e5ecc1829446e392ef",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:29:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:29:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:29:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "f4d963395c794f609fb373f96484d982",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "e0506c78ccea40f-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:30:41Z",
+                "shipment_tracking_number": "use9374869903500686005390"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Jaime Denny",
+                "phone_number": "3865622990"
+            },
+            "address": {
+                "address1": "8070 Dream Catcher Circle",
+                "address2": "2205",
+                "city": "Naples",
+                "state": "FL",
+                "zip_code": "34119"
+            }
+        },
+        "status": "complete"
+    },
+    "6f369ffa4a0d4ee7ab8f1f7c3f14096d": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "6f369ffa4a0d4ee7ab8f",
+        "buyer": {
+            "name": "Killian Fitzwater",
+            "phone_number": "2403218646"
+        },
+        "customer_reference_order_id": "427842647225",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "334569663427@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "6f369ffa4a0d4ee7ab8f1f7c3f14096d",
+        "order_acknowledge_date": "2015-12-08T01:58:53Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-08T23:46:58.4592571Z",
+            "request_delivery_by": "2015-12-14T23:46:58.4592571Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "a52b19fe9fc8492e9165b09bee7fcef5",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-07T23:46:57.1932382Z",
+        "order_ready_date": "2015-12-08T00:16:59Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-07T23:46:58.4592571Z",
+        "reference_order_id": "154205417316",
+        "shipments": [
+            {
+                "shipment_id": "fd9b8f4f9c4a41da886eccd67e8cae18",
+                "alt_shipment_id": "76-s25018",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": ""
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-08T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-14T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-08T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "fbb54249941649c28e54f5117d9e24f9",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae17",
+                        "alt_shipment_item_id": "76-s250117",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T12:22:26Z",
+                "shipment_tracking_number": "9374869903500689221704"
+            },
+            {
+                "alt_shipment_id": "6f369ffa4a0d4ee7ab8f",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:25:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:25:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:25:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "e8cf700a8a354e758f47aae66ce27538",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "a52b19fe9fc8492-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:25:50Z",
+                "shipment_tracking_number": "use9374869903500689221704"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Killian Fitzwater ",
+                "phone_number": "2403218646"
+            },
+            "address": {
+                "address1": "511 E STREET",
+                "address2": null,
+                "city": "Oakland",
+                "state": "MD",
+                "zip_code": "21550"
+            }
+        },
+        "status": "complete"
+    },
+    "dc95f45f9f4c4c77b9f5157fcb079079": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "dc95f45f9f4c4c77b9f5",
+        "buyer": {
+            "name": "Cutter Niemic",
+            "phone_number": "8144906937"
+        },
+        "customer_reference_order_id": "287744936151",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "424196422834@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "dc95f45f9f4c4c77b9f5157fcb079079",
+        "order_acknowledge_date": "2015-12-10T12:11:28Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-09T02:41:30.890369Z",
+            "request_delivery_by": "2015-12-15T02:41:30.890369Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "41a1fc80b19d47db8d5461e9a7d468dc",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-08T02:41:29.9373624Z",
+        "order_ready_date": "2015-12-08T03:11:31Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-08T02:41:30.890369Z",
+        "reference_order_id": "193482241527",
+        "shipments": [
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-08T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-14T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-08T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "76a22a43270940189677c3feaaacbde5",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae17",
+                        "alt_shipment_item_id": "76-s250117",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T12:33:01Z",
+                "shipment_tracking_number": "9374869903500689221469"
+            },
+            {
+                "alt_shipment_id": "dc95f45f9f4c4c77b9f5",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:26:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:26:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:26:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "741e6e7bd4c54e9a8c6bf8ac62044c6b",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "41a1fc80b19d47d-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:26:21Z",
+                "shipment_tracking_number": "use9374869903500689221469"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Jack  Niemic",
+                "phone_number": "8144906937"
+            },
+            "address": {
+                "address1": "806 ARDMORE AVE",
+                "address2": null,
+                "city": "Erie",
+                "state": "PA",
+                "zip_code": "16505"
+            }
+        },
+        "status": "complete"
+    },
+    "5ea5213c7170404089a9ff1a5d96abde": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "5ea5213c7170404089a9",
+        "buyer": {
+            "name": "Craig M Davis",
+            "phone_number": "7203988549"
+        },
+        "customer_reference_order_id": "621830865243",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "104162007010@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "5ea5213c7170404089a9ff1a5d96abde",
+        "order_acknowledge_date": "2015-12-04T17:39:38Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-04T14:32:41.7238259Z",
+            "request_delivery_by": "2015-12-10T14:32:41.7238259Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "837dd09c7cd64be6b5be328f310d8904",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5MM Audio Adapter for Bluetooth Devices",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-03T14:32:40.3771726Z",
+        "order_ready_date": "2015-12-03T15:02:41Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-03T14:32:41.7238259Z",
+        "reference_order_id": "210807205934",
+        "shipments": [
+            {
+                "shipment_id": "fd9b8f4f9c4a41da886eccd67e8cae78",
+                "alt_shipment_id": "76-s2507",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": " "
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-04T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-11T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-04T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "57b0d3cc960846f28cd788dcae4f2eda",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae78",
+                        "alt_shipment_item_id": "76-s2507",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-04T19:48:59Z",
+                "shipment_tracking_number": "9374869903500679896295"
+            },
+            {
+                "alt_shipment_id": "5ea5213c7170404089a9",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:26:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:26:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:26:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "41b3ae7183414cc1871438a5c74b2a4b",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "837dd09c7cd64be-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:27:42Z",
+                "shipment_tracking_number": "use9374869903500679896295"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Craig Davis",
+                "phone_number": "7203988549"
+            },
+            "address": {
+                "address1": "912 S Washington St",
+                "address2": null,
+                "city": "Denver",
+                "state": "CO",
+                "zip_code": "80209"
+            }
+        },
+        "status": "complete"
+    },
+    "d7d87bec301c438f816e92ca7f6affdb": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "d7d87bec301c438f816e",
+        "buyer": {
+            "name": "Emily Halcomb",
+            "phone_number": "7405046455"
+        },
+        "customer_reference_order_id": "241149880928",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "328618338143@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "d7d87bec301c438f816e92ca7f6affdb",
+        "order_acknowledge_date": "2015-12-08T01:57:41Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-08T02:22:02.0587127Z",
+            "request_delivery_by": "2015-12-14T02:22:02.0587127Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "76930a0afeb64947bc80fc78fb4e41d6",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-07T02:22:01.011976Z",
+        "order_ready_date": "2015-12-07T02:52:01Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-07T02:22:02.0587127Z",
+        "reference_order_id": "251783931910",
+        "shipments": [
+            {
+                "shipment_id": "fd9b8f4f9c4a41da886eccd67e8cae17",
+                "alt_shipment_id": "76-s25017",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": ""
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-07T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-13T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-07T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "c35f9c3fa86043759eb8a378ed58235c",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae17",
+                        "alt_shipment_item_id": "76-s250117",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-08T02:06:09Z",
+                "shipment_tracking_number": "9374869903500686004294"
+            },
+            {
+                "alt_shipment_id": "d7d87bec301c438f816e",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:28:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:28:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:28:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "288f2ea7fc5c4d6d812badf5bdfab8ff",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "76930a0afeb6494-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:29:10Z",
+                "shipment_tracking_number": "use9374869903500686004294"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Emily  Halcomb",
+                "phone_number": "7405046455"
+            },
+            "address": {
+                "address1": "13510 Sockman Road ",
+                "address2": null,
+                "city": "Mount Vernon",
+                "state": "OH",
+                "zip_code": "43050"
+            }
+        },
+        "status": "complete"
+    },
+    "79c0303261bf49549ced570d275b08d1": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "79c0303261bf49549ced",
+        "buyer": {
+            "name": "Manuel blanco",
+            "phone_number": "3472204753"
+        },
+        "customer_reference_order_id": "388691888220",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "275655800141@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "79c0303261bf49549ced570d275b08d1",
+        "order_acknowledge_date": "2015-12-06T23:17:27Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-05T18:49:31.9884584Z",
+            "request_delivery_by": "2015-12-11T18:49:31.9884584Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "7d8a2aa44ee644c1a041b2a161af2844",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-04T18:49:30.9827922Z",
+        "order_ready_date": "2015-12-04T19:19:32Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-04T18:49:31.9884584Z",
+        "reference_order_id": "415800375426",
+        "shipments": [
+            {
+                "shipment_id": "fd9b8f4f9c4a41da886eccd67e8cae11",
+                "alt_shipment_id": "76-s25011",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": ""
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-07T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-13T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-07T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "d7e4ea7bef6844248ba2291fc49e5304",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "fd9b8f4f9c4a41da886eccd67e8cae11",
+                        "alt_shipment_item_id": "76-s250112",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-08T01:52:17Z",
+                "shipment_tracking_number": "9374869903500686005741"
+            },
+            {
+                "alt_shipment_id": "79c0303261bf49549ced",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:31:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:31:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:31:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "0fa6a7a2f54f4662ad84a807ad6d246d",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "7d8a2aa44ee644c-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:32:41Z",
+                "shipment_tracking_number": "use9374869903500686005741"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Manuel Blanco",
+                "phone_number": "3472204753"
+            },
+            "address": {
+                "address1": "1121 elder ave",
+                "address2": "C1",
+                "city": "Bronx",
+                "state": "NY",
+                "zip_code": "10472"
+            }
+        },
+        "status": "complete"
+    },
+    "0dd5db92f5fa4f9c92b5aa872f6e6901": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "0dd5db92f5fa4f9c92b5",
+        "buyer": {
+            "name": "Craig Kelley",
+            "phone_number": "7177013636"
+        },
+        "customer_reference_order_id": "263342013322",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "353718562467@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "0dd5db92f5fa4f9c92b5aa872f6e6901",
+        "order_acknowledge_date": "2015-12-06T23:24:09Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-07T21:32:07.6502973Z",
+            "request_delivery_by": "2015-12-13T21:32:07.6502973Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "ee8c4b45ee6246bb8f38bf99754a4027",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-06T21:32:05.7911689Z",
+        "order_ready_date": "2015-12-06T22:02:07Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-06T21:32:07.6502973Z",
+        "reference_order_id": "711777157583",
+        "shipments": [
+            {
+                "shipment_id": "ee8c4b45ee6246bb8f38bf99754a4027",
+                "alt_shipment_id": "76-s25015",
+                "shipment_items": [
+                    {
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "shipment_item_id": " ",
+                        "alt_shipment_item_id": ""
+                    }
+                ]
+            },
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-07T13:45:30.0000000-07:00",
+                "expected_delivery_date": "2015-12-13T13:45:30.0000000-07:00",
+                "response_shipment_date": "2015-12-07T13:45:30.0000000-07:00",
+                "response_shipment_method": "ups",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "ae39e099b3a0438d9c7c0d6ec6b3b15b",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "ee8c4b45ee6246bb8f38bf99754a4027",
+                        "alt_shipment_item_id": "76-s25015",
+                        "merchant_sku": "12864-141",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-08T01:43:03Z",
+                "shipment_tracking_number": "9374869903500686004560"
+            },
+            {
+                "alt_shipment_id": "0dd5db92f5fa4f9c92b5",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T18:33:00.0000000-07:00",
+                "expected_delivery_date": "2015-12-12T18:33:00.0000000-07:00",
+                "response_shipment_date": "2015-12-10T18:33:00.0000000-07:00",
+                "response_shipment_method": "USPS",
+                "ship_from_zip_code": "07042",
+                "shipment_id": "6c01d4ef8c124eff95682ca9d8d2f04a",
+                "shipment_items": [
+                    {
+                        "alt_shipment_item_id": "ee8c4b45ee6246b-0",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-10T23:33:15Z",
+                "shipment_tracking_number": "use9374869903500686004560"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Craig Kelley",
+                "phone_number": "7177013636"
+            },
+            "address": {
+                "address1": "726 Sherwood Drive",
+                "address2": null,
+                "city": "Carlisle",
+                "state": "PA",
+                "zip_code": "17013"
+            }
+        },
+        "status": "complete"
+    },
+    "1468f122e0bf4106829094f0a67af842": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "1468f122e0bf4106829094f0a67af842",
+        "buyer": {
+            "name": "Steven Bennett",
+            "phone_number": "2282220650"
+        },
+        "customer_reference_order_id": "394761631622",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "358227100845@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "1468f122e0bf4106829094f0a67af842",
+        "order_acknowledge_date": "2015-12-10T12:27:00Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-10T16:23:32.4719435Z",
+            "request_delivery_by": "2015-12-16T16:23:32.4719435Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "0fbb5cf2e4ca4aca892b991d6c334eac",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 4,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-09T16:23:31.0479696Z",
+        "order_ready_date": "2015-12-09T16:53:32Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 4.4608
+                }
+            ],
+            "item_price": {
+                "base_price": 47.96,
+                "item_tax": null,
+                "item_shipping_cost": 7.8,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-09T16:23:32.4719435Z",
+        "reference_order_id": "191878211364",
+        "shipments": [
+            {
+                "alt_shipment_id": " ",
+                "carrier": "USPS",
+                "carrier_pick_up_date": "2015-12-10T00:00:00.0000000-05:00",
+                "expected_delivery_date": "2015-12-16T00:00:00.0000000-05:00",
+                "response_shipment_date": "2015-12-10T00:00:00.0000000-05:00",
+                "response_shipment_method": "DHL Global",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "4e0d6ec50ca74de9af4b4540fa87de4c",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "9374869903500692095316",
+                        "alt_shipment_item_id": "9374869903500692095316",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 4,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-13T16:12:58Z",
+                "shipment_tracking_number": "9374869903500692095316"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Steven  Bennett ",
+                "phone_number": "2282220650"
+            },
+            "address": {
+                "address1": "15208 Lisa Dr",
+                "address2": null,
+                "city": "Biloxi",
+                "state": "MS",
+                "zip_code": "39532"
+            }
+        },
+        "status": "complete"
+    },
+    "afc3f588e6ca44469f28387861f28ec3": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "afc3f588e6ca44469f28387861f28ec3",
+        "buyer": {
+            "name": "Tracy E Pollak",
+            "phone_number": "6039426007"
+        },
+        "customer_reference_order_id": "109290642822",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "893533775576@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "afc3f588e6ca44469f28387861f28ec3",
+        "order_acknowledge_date": "2015-12-14T18:49:19Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-15T17:48:15.437083Z",
+            "request_delivery_by": "2015-12-21T17:48:15.437083Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "8b80a7ef497d43be9a7b3d65fd655582",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-14T17:48:13.092084Z",
+        "order_ready_date": "2015-12-14T18:19:03Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-14T17:48:15.437083Z",
+        "reference_order_id": "130647078635",
+        "shipments": [
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-15T00:00:00.0000000-05:00",
+                "expected_delivery_date": "2015-12-21T00:00:00.0000000-05:00",
+                "response_shipment_date": "2015-12-15T00:00:00.0000000-05:00",
+                "response_shipment_method": "Ground",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "190dcb334f384ebc87669a7e891e4ff9",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "9374869903500702015877",
+                        "alt_shipment_item_id": "9374869903500702015877",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-14T22:09:29Z",
+                "shipment_tracking_number": "9374869903500702015877"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Tracy Pollak",
+                "phone_number": "6039426007"
+            },
+            "address": {
+                "address1": "169 Rochester Road",
+                "address2": null,
+                "city": "Northwood",
+                "state": "NH",
+                "zip_code": "03261"
+            }
+        },
+        "status": "complete"
+    },
+    "17f278d2853f456c9de56903ac6ce2ae": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "17f278d2853f456c9de56903ac6ce2ae",
+        "buyer": {
+            "name": "Richard Howey",
+            "phone_number": "7325473834"
+        },
+        "customer_reference_order_id": "391241062821",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "133843054121@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "17f278d2853f456c9de56903ac6ce2ae",
+        "order_acknowledge_date": "2015-12-14T15:20:53Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-13T21:04:30.4013904Z",
+            "request_delivery_by": "2015-12-19T21:04:30.4013904Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "98072ccef20b4d7bab47b6417c762013",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-12T21:04:29.510946Z",
+        "order_ready_date": "2015-12-12T21:34:29Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-12T21:04:30.4013904Z",
+        "reference_order_id": "428197415115",
+        "shipments": [
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-14T00:00:00.0000000-05:00",
+                "expected_delivery_date": "2015-12-21T00:00:00.0000000-05:00",
+                "response_shipment_date": "2015-12-14T00:00:00.0000000-05:00",
+                "response_shipment_method": "Ground",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "3f9e9b3d6e984121921bf288d2d2d030",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "9374869903500701359576",
+                        "alt_shipment_item_id": "9374869903500701359576",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-14T19:01:36Z",
+                "shipment_tracking_number": "9374869903500701359576"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Rick Howey",
+                "phone_number": "7325473834"
+            },
+            "address": {
+                "address1": "64 Bay Bridge Drive, Brick, NJ",
+                "address2": null,
+                "city": "Brick",
+                "state": "NJ",
+                "zip_code": "08724"
+            }
+        },
+        "status": "complete"
+    },
+    "8c4b1def22fa446c83f3b6f3c7545a72": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "8c4b1def22fa446c83f3b6f3c7545a72",
+        "buyer": {
+            "name": "Stephen Hantus",
+            "phone_number": "2163125311"
+        },
+        "customer_reference_order_id": "847586780262",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "404695375326@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "8c4b1def22fa446c83f3b6f3c7545a72",
+        "order_acknowledge_date": "2015-12-12T19:26:16Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-12T22:46:02.4065526Z",
+            "request_delivery_by": "2015-12-18T22:46:02.4065526Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "5ea29f0a0ee548be827829c0bfc7989f",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-11T22:45:52.4093377Z",
+        "order_ready_date": "2015-12-11T23:16:04Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-11T22:46:02.4065526Z",
+        "reference_order_id": "636259254141",
+        "shipments": [
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-14T00:00:00.0000000-05:00",
+                "expected_delivery_date": "2015-12-19T00:00:00.0000000-05:00",
+                "response_shipment_date": "2015-12-14T00:00:00.0000000-05:00",
+                "response_shipment_method": "Ground",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "a0c8b7e27a6348de987b15120194a122",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "9374869903500701359101",
+                        "alt_shipment_item_id": "9374869903500701359101",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-14T19:06:16Z",
+                "shipment_tracking_number": "9374869903500701359101"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Stephen Hantus",
+                "phone_number": "2163125311"
+            },
+            "address": {
+                "address1": "4025 Eastway Rd",
+                "address2": null,
+                "city": "Cleveland",
+                "state": "OH",
+                "zip_code": "44121"
+            }
+        },
+        "status": "complete"
+    },
+    "9ca5a44ace2843bba889ffe6ec7eb4a1": {
+        "acknowledgement_status": "accepted",
+        "alt_order_id": "9ca5a44ace2843bba889ffe6ec7eb4a1",
+        "buyer": {
+            "name": "Shirley f  Everard",
+            "phone_number": "8055359646"
+        },
+        "customer_reference_order_id": "207619350423",
+        "fulfillment_node": "40a499e2e2c34f1ebaa7bff264fa2c65",
+        "has_shipments": false,
+        "hash_email": "254395841878@customer.jet.com",
+        "jet_request_directed_cancel": false,
+        "merchant_order_id": "9ca5a44ace2843bba889ffe6ec7eb4a1",
+        "order_acknowledge_date": "2015-12-12T19:26:25Z",
+        "order_detail": {
+            "request_shipping_carrier": null,
+            "request_shipping_method": "DHL Global Mail",
+            "request_service_level": "DHL Global Mail",
+            "request_ship_by": "2015-12-13T06:22:04.4221639Z",
+            "request_delivery_by": "2015-12-19T06:22:04.4221639Z"
+        },
+        "order_items": [
+            {
+                "order_item_id": "fc42a67f672047179b791c2f8d5baaf9",
+                "alt_order_item_id": "null",
+                "order_item_acknowledgement_status": "fulfillable",
+                "merchant_sku": "UNI-35BT-ADA",
+                "request_order_quantity": 1,
+                "request_order_cancel_qty": 0,
+                "adjustment_reason": null,
+                "item_tax_code": null,
+                "item_price": {
+                    "base_price": 11.99,
+                    "item_tax": null,
+                    "item_shipping_cost": 1.95,
+                    "item_shipping_tax": null
+                },
+                "price_adjustment": null,
+                "item_fees": 0,
+                "fee_adjustments": [
+                    {
+                        "commission_id": "",
+                        "adjustment_name": "",
+                        "adjustment_type": "base",
+                        "value": 1.1152
+                    }
+                ],
+                "regulatory_fees": null,
+                "tax_info": null,
+                "product_title": "BTA1 Bluetooth 3.5mm Audio Adapter",
+                "url": "https:\/\/images.jet.com\/md5\/8e562706494c8e69f074d2fe0f4b89e0.500"
+            }
+        ],
+        "order_placed_date": "2015-12-12T06:22:03.3248752Z",
+        "order_ready_date": "2015-12-12T06:52:04Z",
+        "order_totals": {
+            "item_fees": 0,
+            "regulatory_fees": null,
+            "fee_adjustments": [
+                {
+                    "commission_id": "",
+                    "adjustment_name": "",
+                    "adjustment_type": "base",
+                    "value": 1.1152
+                }
+            ],
+            "item_price": {
+                "base_price": 11.99,
+                "item_tax": null,
+                "item_shipping_cost": 1.95,
+                "item_shipping_tax": null
+            },
+            "tax_info": null
+        },
+        "order_transmission_date": "2015-12-12T06:22:04.4221639Z",
+        "reference_order_id": "119913601368",
+        "shipments": [
+            {
+                "alt_shipment_id": " ",
+                "carrier": "DHL Global Mail",
+                "carrier_pick_up_date": "2015-12-14T00:00:00.0000000-05:00",
+                "expected_delivery_date": "2015-12-19T00:00:00.0000000-05:00",
+                "response_shipment_date": "2015-12-14T00:00:00.0000000-05:00",
+                "response_shipment_method": "",
+                "ship_from_zip_code": "12061",
+                "shipment_id": "fe878aa9be77487ab3dee5ab5379a4ef",
+                "shipment_items": [
+                    {
+                        "shipment_item_id": "9374869903500701359330",
+                        "alt_shipment_item_id": "9374869903500701359330",
+                        "merchant_sku": "UNI-35BT-ADA",
+                        "response_shipment_sku_quantity": 1,
+                        "response_shipment_cancel_qty": 0
+                    }
+                ],
+                "shipment_message_date": "2015-12-14T19:05:22Z",
+                "shipment_tracking_number": "9374869903500701359330"
+            }
+        ],
+        "shipping_to": {
+            "recipient": {
+                "name": "Shirley Everard",
+                "phone_number": "8055359646"
+            },
+            "address": {
+                "address1": "395 n brent st",
+                "address2": null,
+                "city": "Ventura",
+                "state": "CA",
+                "zip_code": "93003"
+            }
+        },
+        "status": "complete"
+    }
+}"
