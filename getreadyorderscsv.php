@@ -50,7 +50,7 @@ function GetAllOrders($status) {
     $allordernodes = $orderobj->GetAllOrdersNodes($authinfo,$status);
     $json_str = json_encode($allordernodes,JSON_PRETTY_PRINT);
     //var_dump($json_str);
-	return $allordernodes;	
+	return $allordernodes;
 }
 
 function GetOrdersCSV($allorders) {
@@ -136,11 +136,11 @@ function GetOrdersCSV($allorders) {
 
 }
 
-$allorders = GetAllOrders('complete');
+$allorders = GetAllOrders('ready');
 $retstr = GetOrdersCSV($allorders);
 
 header('Content-Type: application/csv');
-header('Content-Disposition: attachment; filename="'.'allcompletedorders.csv'.'";');
+header('Content-Disposition: attachment; filename="'.'allreadyorders.csv'.'";');
 header("Pragma: no-cache");
 header("Expires: 0");
 

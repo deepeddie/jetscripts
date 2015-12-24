@@ -50,9 +50,10 @@ function GetAllOrders($status) {
     $allordernodes = $orderobj->GetAllOrdersNodes($authinfo,$status);
     $json_str = json_encode($allordernodes,JSON_PRETTY_PRINT);
     //var_dump($json_str);
+	return $allordernodes;
 }
 
-function GetCompletedOrdersCSV($allcompletedorders) {
+function GetOrdersCSV($allorders) {
 
     global $authinfo;
     global $DELIM;
@@ -60,9 +61,7 @@ function GetCompletedOrdersCSV($allcompletedorders) {
     global $NEW_LINE;
     
 
-    $orderobj = new OrdersAPI();
-    $allcompletedorders = $orderobj->GetAllOrdersNodes($authinfo,'acknowledged');
-    $json_str = json_encode($allcompletedorders,JSON_PRETTY_PRINT);
+    //$json_str = json_encode($allorders,JSON_PRETTY_PRINT);
     //var_dump($json_str);
 
     $csvline = "";
@@ -96,7 +95,7 @@ function GetCompletedOrdersCSV($allcompletedorders) {
             $csvline = $csvline . $NEW_LINE;
 
     }
-    foreach($allcompletedorders as $orderid => $oneordernode) {
+    foreach($allorders as $orderid => $oneordernode) {
             $csvline = $csvline .  $orderid . $DELIM;
             $csvline = $csvline .  "\"" .$oneordernode->{"status"} . "\"" . $DELIM;
             $csvline = $csvline .  "\"" .Convert2Date($oneordernode->{"order_placed_date"}) . "\"" .$DELIM;
@@ -137,11 +136,11 @@ function GetCompletedOrdersCSV($allcompletedorders) {
 
 }
 
-$allcompletedorders = GetAllOrders('complete');
-$retstr = GetCompletedOrdersCSV($allcompletedorders);
+$allorders = GetAllOrders('acknowledged');
+$retstr = GetOrdersCSV($allorders);
 
 header('Content-Type: application/csv');
-header('Content-Disposition: attachment; filename="'.'allorders.csv'.'";');
+header('Content-Disposition: attachment; filename="'.'allacknowledgedorders.csv'.'";');
 header("Pragma: no-cache");
 header("Expires: 0");
 
